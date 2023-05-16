@@ -2,7 +2,7 @@
   "name": "project-final",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/evgeniy210191/project-final",
+  "homepage": "https://evgeniy210191.github.io/project-final/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project-final/",
