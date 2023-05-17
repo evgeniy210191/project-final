@@ -3,7 +3,6 @@ body {
   font-family: $montserrat;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
   background-color: $generalBackColor;
@@ -12,8 +11,26 @@ body {
 }
 button {
   cursor: pointer;
+  border: none;
 }
 a {
   text-decoration: none;
   cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  font-size: 0;
+  position: relative;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

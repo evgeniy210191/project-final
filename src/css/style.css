@@ -53,7 +53,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
   background-color: #84a178;
@@ -63,6 +62,7 @@ body {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 a {
@@ -70,35 +70,42 @@ a {
   cursor: pointer;
 }
 
-header {
-  text-align: left;
-}
-header .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+.container {
   margin: 0 auto;
   font-size: 0;
   position: relative;
 }
 @media screen and (min-width: 320px) {
-  header .container {
+  .container {
     width: 320px;
   }
 }
 @media screen and (min-width: 480px) {
-  header .container {
+  .container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  header .container {
+  .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  header .container {
+  .container {
     width: 1200px;
+  }
+}
+
+header {
+  text-align: left;
+}
+header .header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  header .header {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -134,30 +141,6 @@ header .buy-table svg {
   header .buy-table {
     display: block;
   }
-}
-header .modal-menu {
-  z-index: 3;
-  background: transparent;
-  border: none;
-  display: block;
-}
-@media screen and (min-width: 1200px) {
-  header .modal-menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  header .modal-menu.is-open {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-}
-header .modal-menu.is-open .close {
-  display: block;
-}
-header .modal-menu.is-open .open {
-  display: none;
 }
 header .mobile-menu {
   display: none;
@@ -221,6 +204,31 @@ header .open {
   .desktop-menu a:hover, .desktop-menu a:focus {
     color: #d6936d;
   }
+}
+
+.modal-menu {
+  z-index: 3;
+  background: transparent;
+  border: none;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .modal-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-menu.is-open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+.modal-menu.is-open .close {
+  display: block;
+}
+.modal-menu.is-open .open {
+  display: none;
 }
 
 .buy {
@@ -388,6 +396,248 @@ h1 .lower {
   position: absolute;
   bottom: 0;
   right: 70px;
+}
+.about-product {
+  background: #fcfcfc url("../images/background-mobile.png") repeat;
+}
+@media screen and (min-width: 480px) {
+  .about-product {
+    background: #fcfcfc url("../images/bg_mobile.png") repeat;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-product {
+    background: #fcfcfc url("../images/bg_tablet.png") repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-product {
+    background: #fcfcfc url("../images/Backgroud_desktop.png") repeat;
+  }
+}
+
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .products {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.products h2 {
+  font-family: "Seymour One", sans-serif;
+  font-size: 30px;
+  line-height: 1.26;
+  color: #131313;
+  margin-bottom: 145px;
+}
+@media screen and (min-width: 768px) {
+  .products h2 {
+    margin-bottom: 200px;
+  }
+}
+.products span {
+  font-size: 18px;
+}
+.products h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #131313;
+}
+@media screen and (min-width: 1200px) {
+  .products h3 {
+    font-size: 30px;
+  }
+}
+.products p {
+  font-size: 14px;
+  line-height: 1.76;
+  color: #131313;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .products p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 66px;
+  }
+}
+.products button {
+  background: transparent;
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+@media screen and (min-width: 1200px) {
+  .products button {
+    margin-bottom: 67px;
+  }
+}
+.products .ice-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .products .ice-choice {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.products .info {
+  width: 320px;
+  height: 428px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 126px;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.products .info:not(:last-child) {
+  margin: 0 0 168px;
+}
+@media screen and (min-width: 768px) {
+  .products .info {
+    width: 224px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .products .info:not(:last-child) {
+    margin: 0 16px 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products .info {
+    width: 370px;
+    height: 536px;
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 165px;
+  }
+}
+.products .ice-cream {
+  background: #aec6a5;
+}
+.products .ice-coffee {
+  background: #efd478;
+}
+.products .milkshakes {
+  background: #d6936d;
+}
+.products .img-choice {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background: inherit;
+  box-shadow: 0 5px 5px;
+  border-radius: 50%;
+}
+
+.how-made {
+  padding-top: 60px;
+  padding-bottom: 81px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.how-made h2 {
+  font-size: 30px;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  margin-bottom: 54px;
+}
+@media screen and (min-width: 768px) {
+  .how-made h2 {
+    font-size: 34px;
+    margin-bottom: 98p;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-made h2 {
+    font-size: 36px;
+    margin-bottom: 121px;
+  }
+}
+.how-made .under {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .how-made .under {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .how-made .under {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .how-made .recipes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.how-made .recipes img {
+  width: 278px;
+}
+@media screen and (min-width: 768px) {
+  .how-made .recipes img {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-made .recipes img {
+    width: 490px;
+  }
+}
+.how-made button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 10px;
+  background: #f8d24e;
+  padding: 12px 34px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .how-made button {
+    margin-top: 32p;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-made button {
+    margin-top: 54px;
+  }
+}
+.how-made p {
+  font-size: 12px;
+  line-height: 1.62;
+}
+@media screen and (min-width: 1200px) {
+  .how-made p {
+    font-size: 14px;
+    line-height: 1.94;
+  }
+}
+.how-made .recip {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .how-made .recip {
+    width: 463px;
+    text-align: left;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
