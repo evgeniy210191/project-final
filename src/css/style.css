@@ -539,13 +539,17 @@ h1 .lower {
   border-radius: 50%;
 }
 
-.how-made {
+.how-make {
   padding-top: 60px;
   padding-bottom: 81px;
-  padding-left: 130px;
-  padding-right: 130px;
 }
-.how-made h2 {
+@media screen and (min-width: 7688px) {
+  .how-make {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+.how-make h2 {
   font-size: 30px;
   font-family: "Seymour One", sans-serif;
   font-weight: 800;
@@ -554,53 +558,55 @@ h1 .lower {
   margin-bottom: 54px;
 }
 @media screen and (min-width: 768px) {
-  .how-made h2 {
+  .how-make h2 {
     font-size: 34px;
-    margin-bottom: 98p;
+    margin-bottom: 98px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .how-made h2 {
+  .how-make h2 {
     font-size: 36px;
     margin-bottom: 121px;
   }
 }
-.how-made .under {
+.how-make .under {
   font-size: 18px;
   line-height: 1.2;
   font-family: "Montserrat", sans-serif;
 }
 @media screen and (min-width: 768px) {
-  .how-made .under {
+  .how-make .under {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 768px) {
-  .how-made .under {
+  .how-make .under {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 768px) {
-  .how-made .recipes {
+  .how-make .recipes {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
-.how-made .recipes img {
+.how-make .recipes img {
   width: 278px;
 }
 @media screen and (min-width: 768px) {
-  .how-made .recipes img {
+  .how-make .recipes img {
     width: 330px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .how-made .recipes img {
+  .how-make .recipes img {
     width: 490px;
   }
 }
-.how-made button {
+.how-make button {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -610,34 +616,61 @@ h1 .lower {
   margin-top: 24px;
 }
 @media screen and (min-width: 768px) {
-  .how-made button {
+  .how-make button {
     margin-top: 32p;
   }
 }
 @media screen and (min-width: 1200px) {
-  .how-made button {
+  .how-make button {
     margin-top: 54px;
   }
 }
-.how-made p {
+.how-make p {
   font-size: 12px;
   line-height: 1.62;
 }
 @media screen and (min-width: 1200px) {
-  .how-made p {
+  .how-make p {
     font-size: 14px;
     line-height: 1.94;
   }
 }
-.how-made .recip {
+.how-make .recip {
   margin-top: 40px;
+  width: 220px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 @media screen and (min-width: 768px) {
-  .how-made .recip {
-    width: 463px;
+  .how-make .recip {
+    width: 334px;
     text-align: left;
-    margin: 0 auto;
   }
+}
+
+.ingredients .ingredients-svg {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: #f8d24e;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.ingredients span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+.ingredients .ingredients-text {
+  font-size: 12px;
+  line-height: 1.7;
+  width: 230px;
+  margin: 16px auto 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

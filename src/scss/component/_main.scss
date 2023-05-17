@@ -116,11 +116,13 @@
   }
 }
 
-.how-made {
+.how-make {
   padding-top: 60px;
   padding-bottom: 81px;
-  padding-left: 130px;
-  padding-right: 130px;
+  @media screen and (min-width: 7688px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
   h2 {
     font-size: 30px;
     font-family: $seymour;
@@ -130,7 +132,7 @@
     margin-bottom: 54px;
     @media screen and (min-width: 768px) {
       font-size: 34px;
-      margin-bottom: 98p;
+      margin-bottom: 98px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 36px;
@@ -153,6 +155,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     img {
       width: 278px;
@@ -189,14 +193,39 @@
   }
   .recip {
     margin-top: 40px;
+    width: 220px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
     @media screen and (min-width: 768px) {
-      width: 463px;
+      width: 334px;
       text-align: left;
-      margin: 0 auto;
     }
   }
-  .ingredients {
+}
+.ingredients {
+  .ingredients-svg {
+    @include size(50px, 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: $buttonDefaultColor;
+    border-radius: 50%;
+    margin-bottom: 16px;
   }
-  .weight {
+  span {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    text-transform: uppercase;
   }
+  .ingredients-text {
+    font-size: 12px;
+    line-height: 1.7;
+    width: 230px;
+    margin: 16px auto 22px;
+  }
+}
+.weight {
 }
