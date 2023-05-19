@@ -873,4 +873,145 @@ h1 .lower {
   height: 50px;
 }
 
+.adreses {
+  padding: 0 24px 40px;
+}
+.adreses h4 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  background: #f8d24e;
+  color: #131313;
+  display: inline-block;
+  padding: 4px 22px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.adreses .buttons-info {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0 60px;
+}
+.adreses .button-location {
+  padding: 12px 0;
+  width: 196px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  background: #f8d24e;
+}
+.adreses .button-franchise {
+  padding: 12px 0;
+  width: 196px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.adres {
+  width: 280px;
+  margin: -349px auto 0;
+}
+.adres li {
+  background: #fcfcfc;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  padding: 40px 32px 24px;
+  text-align: left;
+}
+.adres li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.adres .establishment {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+.adres .establishment:not(:last-child) {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+.adres .name-establishment {
+  color: #131313;
+  padding-bottom: 8px;
+}
+.adres .location-establishment {
+  color: #d6936d;
+}
+.adres .time-work {
+  color: #131313;
+}
+.adres .time-work span {
+  color: #907e82;
+}
+.adres .time-work:not(:last-child) {
+  padding-bottom: 8px;
+}
+.adres .contact-establishment {
+  color: #131313;
+}
+
+.contacts {
+  padding: 0 24px 40px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts .brand {
+  text-align: left;
+  width: 250px;
+}
+.contacts .the-made {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+.contacts .the-passion {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.contacts .social {
+  display: flex;
+  justify-content: flex-end;
+  margin: 60px 0 20px;
+}
+.contacts span {
+  color: #131313;
+}
+.contacts .tel {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 24px;
+}
+.social-list a {
+  width: 35px;
+  height: 35px;
+  background: #f8d24e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ps {
+  color: #7a7a7a;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  padding: 20px 24px;
+}
+
 /*# sourceMappingURL=style.css.map */
