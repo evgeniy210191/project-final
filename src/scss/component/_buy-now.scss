@@ -1,0 +1,26 @@
+.info-modal {
+  position: relative;
+  margin-top: 82px;
+  padding-bottom: 20px;
+  padding-top: 95px;
+  width: 132px;
+}
+
+.info-modal {
+  border-radius: 15px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
+.buy-cream {
+  border: solid 2px #96af8c;
+}
+.buy-coffee {
+  background: #efd478;
+  border: 2px solid #efd478;
+}
+.buy-milkshake {
+  border: 2px solid #d6936d;
+}

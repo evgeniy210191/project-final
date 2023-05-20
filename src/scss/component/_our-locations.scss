@@ -1,0 +1,27 @@
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto;
+  width: 200px;
+  background: $generalBackColor;
+  border-radius: 10px;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+}
+.link-map {
+  border-radius: 10px;
+  background: $buttonDefaultColor;
+  padding: 12px 34px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  &:hover {
+    background: $buttonHoverColor;
+  }
+  &:focus {
+    background: $buttonHoverColor;
+    color: $textFocusColor;
+  }
+}

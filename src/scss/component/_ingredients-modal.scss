@@ -1,0 +1,107 @@
+.calories {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 48px;
+}
+
+.chocolate-icecream {
+  margin: 20px auto 30px;
+  border-bottom: solid 7px rgba(156, 190, 143, 0.7);
+  border-radius: 50%;
+}
+.calories-ice {
+  border: 2px solid #9cbe8f;
+  @include size(53px, 72px);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  padding-bottom: 4px;
+  &:not(:last-child) {
+    margin-right: 9px;
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+    }
+  }
+
+  p {
+    background: #9cbe8f;
+    margin: 0 auto;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    @include size(43px, 43px);
+  }
+}
+
+.ingredient-modal {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+h6 {
+  margin: 40px 0 24px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 40px auto 0;
+  input {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    background: rgba(248, 210, 78, 0.1);
+    padding: 11px;
+    &[placeholder] {
+      font-size: 14px;
+      line-height: 140%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
+  }
+  textarea {
+    width: 100%;
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    background: rgba(248, 210, 78, 0.1);
+    padding: 11px;
+    resize: vertical;
+    &[placeholder] {
+      font-size: 14px;
+      line-height: 140%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
+  }
+}
+button[type='submit'] {
+  background: $buttonDefaultColor;
+  margin: 0 auto;
+  width: 132px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 24px;
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  &:hover {
+    background: $buttonHoverColor;
+  }
+  &:focus {
+    background: $buttonHoverColor;
+    color: $textFocusColor;
+  }
+}
+.modal-button:hover svg,
+.modal-button:focus svg {
+  fill: $generalBackColor;
+}

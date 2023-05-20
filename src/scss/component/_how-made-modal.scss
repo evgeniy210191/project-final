@@ -1,0 +1,59 @@
+.backdrop {
+  position: fixed;
+  z-index: 4;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $textDarkColor;
+  letter-spacing: 0.04px;
+  @include size(100%, 100%);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  opacity: 0;
+  transition: opacity 1s linear;
+  pointer-events: none;
+  overflow-y: scroll;
+  &.is-open {
+    opacity: 1;
+    transition: opacity 250ms linear;
+  }
+}
+.modal-button {
+  position: absolute;
+  background: transparent;
+  top: 16px;
+  right: 16px;
+}
+.modal {
+  position: relative;
+  border: 10px;
+  padding: 28px 20px;
+  margin: 0 auto;
+  width: 80%;
+  background: $secondBackColor;
+  border-radius: 20px;
+}
+h5 {
+  font-family: $seymour;
+  font-size: 20px;
+  line-height: 1.3;
+  color: $textDarkColor;
+}
+.how-made {
+  p {
+    font-size: 14px;
+    line-height: 140%;
+    color: $textDarkColor;
+  }
+}
+iframe {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  @media screen and (min-width: 768px) {
+    margin: 32px auto;
+  }
+}

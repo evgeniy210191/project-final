@@ -1,0 +1,13 @@
+.thank-you {
+  p {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: left;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 140%;
+      width: 600px;
+    }
+  }
+}

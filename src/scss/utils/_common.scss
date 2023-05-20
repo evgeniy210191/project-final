@@ -8,6 +8,7 @@ body {
   background-color: $generalBackColor;
   color: $textLightColor;
   text-align: center;
+  box-sizing: border-box;
 }
 button {
   cursor: pointer;
@@ -17,9 +18,22 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   margin: 0 auto;
-  font-size: 0;
+  font-size: 0rem;
   position: relative;
   @media screen and (min-width: 320px) {
     width: 320px;

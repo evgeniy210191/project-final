@@ -59,63 +59,62 @@
       margin-bottom: 67px;
     }
   }
-  .ice-choice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: center;
-    }
-  }
-  .info {
-    @include size(320px, 428px);
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 126px;
-    border-radius: 24px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    &:not(:last-child) {
-      margin: 0 0 168px;
-    }
-    @media screen and (min-width: 768px) {
-      width: 224px;
-      padding-left: 26px;
-      padding-right: 26px;
-      &:not(:last-child) {
-        margin: 0 16px 0 0;
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      @include size(370px, 536px);
-      padding-left: 29px;
-      padding-right: 29px;
-      padding-top: 165px;
-    }
-  }
-  .ice-cream {
-    background: #aec6a5;
-  }
-  .ice-coffee {
-    background: #efd478;
-  }
   .milkshakes {
     background: #d6936d;
   }
-  .img-choice {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translate(50%, -50%);
-    background: inherit;
-    box-shadow: 0 5px 5px;
-    border-radius: 50%;
+}
+.img-choice {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background: inherit;
+  box-shadow: 0 5px 5px;
+  border-radius: 50%;
+}
+.ice-coffee {
+  background: #efd478;
+}
+.ice-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
   }
 }
-
+.info {
+  @include size(320px, 428px);
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 126px;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin: 0 0 168px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    padding-left: 26px;
+    padding-right: 26px;
+    &:not(:last-child) {
+      margin: 0 16px 0 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    @include size(370px, 536px);
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 165px;
+  }
+}
+.ice-cream {
+  background: #aec6a5;
+}
 .how-make {
   padding-top: 60px;
   h2 {
@@ -264,23 +263,25 @@
     background: #fcfcfc url('../images/Backgroud_desktop.png') repeat;
   }
   .review {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     width: 280px;
     overflow: hidden;
     transform: translateY(-50px);
-    padding-bottom: 409px;
+    padding-bottom: 359px;
     @media screen and (min-width: 480px) {
       width: 440px;
     }
     @media screen and (min-width: 768px) {
+      margin-bottom: 144px;
+
       width: 704px;
       transform: translateY(-144px);
-      padding-bottom: 379px;
+      padding-bottom: 215px;
     }
     @media screen and (min-width: 1200px) {
       width: 1014px;
       transform: translateY(-99px);
-      padding-bottom: 228px;
+      padding-bottom: 129px;
     }
   }
   .reviews-container {
@@ -376,7 +377,4 @@
       margin-right: 18px;
     }
   }
-}
-.adres {
-  height: 50px;
 }
