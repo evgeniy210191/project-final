@@ -49,6 +49,11 @@ table {
   border-spacing: 0;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -142,15 +147,21 @@ header .buy-table {
   padding: 12px 0;
   margin: 0 0 8px 36px;
   font-weight: 600;
-  line-height: 1.4;
   background: #f8d24e;
   border-radius: 10px;
   border: none;
   color: #131313;
   display: none;
 }
-header .buy-table:active {
+header .buy-table:hover {
   background: #0a8817;
+}
+header .buy-table:focus {
+  background: #0a8817;
+  color: #fcfcfc;
+}
+header .buy-table:focus svg {
+  fill: #fcfcfc;
 }
 header .buy-table svg {
   margin-left: 8px;
@@ -256,7 +267,6 @@ header .open {
   margin-right: auto;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.4;
   background: #f8d24e;
   border-radius: 10px;
   border: none;
@@ -344,12 +354,21 @@ h1 .lower {
   background: transparent;
   color: #131313;
 }
+.buttons .product:hover, .buttons .product:focus {
+  border: solid 2px #0a8817;
+  color: #ffffff;
+  outline: none;
+}
 .buttons .how-made {
   font-weight: 600;
   background: transparent;
   text-decoration: underline;
   color: #f8d24e;
   border: none;
+}
+.buttons .how-made:hover, .buttons .how-made:focus {
+  color: #131313;
+  outline: none;
 }
 
 .treat-yourself {
@@ -391,10 +410,19 @@ h1 .lower {
     margin-bottom: 32px;
   }
 }
-.text-call .arrow {
+.text-call .arrow-header {
+  fill: #fcfcfc;
+}
+
+.arrow {
   background: transparent;
-  padding: 5px 0;
+  padding: 10px 0;
   border: none;
+  width: 30px;
+}
+
+.arrow-white:hover svg, .arrow-white:focus svg {
+  fill: #000000;
 }
 
 .dot {
@@ -485,7 +513,8 @@ h1 .lower {
 }
 .products button {
   background: transparent;
-  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
 }
 @media screen and (min-width: 1200px) {
@@ -526,9 +555,7 @@ h1 .lower {
 .info {
   width: 320px;
   height: 428px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 126px;
+  padding: 126px 60px 10px;
   border-radius: 24px;
   position: relative;
   display: flex;
@@ -628,11 +655,21 @@ h1 .lower {
 .how-make button {
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
   border-radius: 10px;
   background: #f8d24e;
   padding: 12px 34px;
   margin-top: 24px;
+}
+.how-make button:hover {
+  background: #0a8817;
+}
+.how-make button:focus {
+  background: #0a8817;
+  color: #ffffff;
+  outline: none;
+}
+.how-make button:focus svg {
+  fill: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .how-make button {
@@ -671,6 +708,10 @@ h1 .lower {
   .how-make .recip {
     width: 463px;
   }
+}
+
+.arrow-black:hover svg, .arrow-black:focus svg {
+  fill: #fcfcfc;
 }
 
 .ingredients {
@@ -800,11 +841,12 @@ h1 .lower {
 .reviews .review-slide {
   position: relative;
   width: 280px;
-  margin-top: 285px;
+  margin-top: 210px;
   margin-right: 30px;
 }
 @media screen and (min-width: 480px) {
   .reviews .review-slide {
+    margin-top: 285px;
     width: 440px;
     padding-left: 75px;
     padding-right: 75px;
@@ -830,12 +872,13 @@ h1 .lower {
   position: absolute;
   width: 280px;
   left: 50%;
-  top: -285px;
+  top: -210px;
   transform: translateX(-50%);
 }
 @media screen and (min-width: 480px) {
   .reviews .bord-review {
     width: 440px;
+    top: -285px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -925,6 +968,17 @@ h1 .lower {
   margin: 0 0 16px 0;
   background: #f8d24e;
 }
+.adreses .button-location:hover {
+  background: #0a8817;
+}
+.adreses .button-location:focus {
+  background: #0a8817;
+  color: #ffffff;
+  outline: none;
+}
+.adreses .button-location:focus svg {
+  fill: #ffffff;
+}
 @media screen and (min-width: 768px) {
   .adreses .button-location {
     margin: 0 16px 0 0;
@@ -936,6 +990,18 @@ h1 .lower {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   background: transparent;
+}
+.adreses .button-franchise:hover, .adreses .button-franchise:focus {
+  border: 2px solid #0a8817;
+  color: #ffffff;
+  outline: none;
+}
+.adreses .button-franchise:focus svg, .adreses .button-franchise:hover svg {
+  fill: #ffffff;
+}
+
+.go {
+  vertical-align: middle;
 }
 
 .adres {
@@ -1110,6 +1176,13 @@ h1 .lower {
   justify-content: center;
   align-items: center;
 }
+.social-list a:hover, .social-list a:focus {
+  background: #0a8817;
+  outline: none;
+}
+.social-list a:hover svg, .social-list a:focus svg {
+  fill: #ffffff;
+}
 
 .ps {
   color: #7a7a7a;
@@ -1157,7 +1230,7 @@ h1 .lower {
 
 .backdrop {
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   justify-content: center;
   align-items: flex-start;
   padding-top: 32px;
@@ -1172,10 +1245,11 @@ h1 .lower {
   display: flex;
   opacity: 0;
   transition: opacity 1s linear;
-  pointer-events: none;
   overflow-y: scroll;
+  pointer-events: none;
 }
 .backdrop.is-open {
+  pointer-events: auto;
   opacity: 1;
   transition: opacity 250ms linear;
 }

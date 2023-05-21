@@ -32,19 +32,43 @@
     border-radius: 10px;
     margin: 0 0 16px 0;
     background: $buttonDefaultColor;
+    &:hover {
+      background: $buttonHoverColor;
+    }
+    &:focus {
+      background: $buttonHoverColor;
+      color: $textFocusColor;
+      outline: none;
+    }
+    &:focus svg {
+      fill: $textFocusColor;
+    }
     @media screen and (min-width: 768px) {
       margin: 0 16px 0 0;
     }
   }
+
   .button-franchise {
     padding: 12px 0;
     width: 196px;
     border: 2px solid #f8d24e;
     border-radius: 10px;
     background: transparent;
+    &:hover,
+    &:focus {
+      border: 2px solid $buttonHoverColor;
+      color: $textFocusColor;
+      outline: none;
+    }
+    &:focus svg,
+    &:hover svg {
+      fill: $textFocusColor;
+    }
   }
 }
-
+.go {
+  vertical-align: middle;
+}
 .adres {
   margin: -399px auto 0;
   @media screen and (min-width: 768px) {
@@ -190,6 +214,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover,
+    &:focus {
+      background: $buttonHoverColor;
+      outline: none;
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: $textFocusColor;
+    }
   }
 }
 .ps {

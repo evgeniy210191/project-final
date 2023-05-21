@@ -15,27 +15,27 @@
         </button>
         <div class="mobile-menu">
           <ul class="list-menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">How it's made?</a></li>
-            <li><a href="">Our products</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#how it's made">How it's made?</a></li>
+            <li><a href="#products">Our products</a></li>
+            <li><a href="#contacts">Contact</a></li>
           </ul>
-          <button class="buy">
-            <span>Buy now</span>
-            <svg width=" 6" height="10">
+          <button type="button" class="buy" data-atribut="buy-now-modal">
+            Buy now
+            <svg width=" 6" height="10" class="go">
               <use xlink:href="svg/sprits.svg#go"></use>
             </svg>
           </button>
         </div>
         <ul class="desktop-menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">How it's made?</a></li>
-          <li><a href="">Our products</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#how it's made">How it's made?</a></li>
+          <li><a href="#products">Our products</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
-        <button class="buy-table" type="button">
-          <span>Buy now</span>
-          <svg width=" 6" height="10">
+        <button class="buy-table" type="button" data-atribut="buy-now-modal">
+          Buy now
+          <svg width=" 6" height="10" class="go">
             <use xlink:href="svg/sprits.svg#go"></use>
           </svg>
         </button>
@@ -49,8 +49,8 @@
           <span class="lower">passion</span>
         </h1>
         <div class="buttons">
-          <button class="product" type="button">Product</button>
-          <button class="how-made" type="button">How it's made?</button>
+          <button class="product" type="button" data-atribut="js-about-product">Product</button>
+          <a href="#how it's made" class="how-made" type="button">How it's made?</a>
         </div>
         <div class="treat-yourself">
           <img src="./images/creameHeader.png" alt="creams" class="creams-header">
@@ -58,11 +58,11 @@
             <p>Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable
               experience!
             </p>
-            <button class="arrow" type="button">
-              <svg width="40" height="8" fill="#FCFCFC" class="arrow-header">
+            <a href="#products" class="arrow arrow-white">
+              <svg width="30" height="8" class="arrow-header">
                 <use xlink:href="./svg/sprits.svg#arrow"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -25,14 +25,20 @@ header {
     padding: 12px 0;
     margin: 0 0 8px 36px;
     font-weight: 600;
-    line-height: 1.4;
     background: $buttonDefaultColor;
     border-radius: 10px;
     border: none;
     color: $textDarkColor;
     display: none;
-    &:active {
+    &:hover {
       background: $buttonHoverColor;
+    }
+    &:focus {
+      background: $buttonHoverColor;
+      color: $textLightColor;
+    }
+    &:focus svg {
+      fill: $textLightColor;
     }
     svg {
       margin-left: 8px;
@@ -139,7 +145,6 @@ header {
   margin-right: auto;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.4;
   background: $buttonDefaultColor;
   border-radius: 10px;
   border: none;
@@ -215,6 +220,12 @@ h1 {
     border-radius: 8px;
     background: transparent;
     color: $textDarkColor;
+    &:hover,
+    &:focus {
+      border: solid 2px $buttonHoverColor;
+      color: $textFocusColor;
+      outline: none;
+    }
   }
   .how-made {
     font-weight: 600;
@@ -222,6 +233,11 @@ h1 {
     text-decoration: underline;
     color: #f8d24e;
     border: none;
+    &:hover,
+    &:focus {
+      color: $textDarkColor;
+      outline: none;
+    }
   }
 }
 .treat-yourself {
@@ -254,13 +270,23 @@ h1 {
       margin-bottom: 32px;
     }
   }
-  .arrow {
-    background: transparent;
-    padding: 5px 0;
-    border: none;
+
+  .arrow-header {
+    fill: #fcfcfc;
   }
 }
-
+.arrow {
+  background: transparent;
+  padding: 10px 0;
+  border: none;
+  width: 30px;
+}
+.arrow-white {
+  &:hover svg,
+  &:focus svg {
+    fill: $textHoverColor;
+  }
+}
 .dot {
   position: absolute;
   bottom: 0;
