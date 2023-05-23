@@ -1278,6 +1278,11 @@ h1 .lower {
   background: #fcfcfc;
   border-radius: 20px;
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 800px;
+  }
+}
 
 h5 {
   font-family: "Seymour One", sans-serif;
@@ -1293,8 +1298,7 @@ h5 {
 }
 
 iframe {
-  width: 100%;
-  height: auto;
+  width: auto;
   margin: 20px auto;
 }
 @media screen and (min-width: 768px) {
@@ -1313,6 +1317,13 @@ iframe {
   margin: 20px auto 30px;
   border-bottom: solid 7px rgba(156, 190, 143, 0.7);
   border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .recipe-ice {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .calories-ice {

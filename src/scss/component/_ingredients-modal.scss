@@ -9,6 +9,12 @@
   border-bottom: solid 7px rgba(156, 190, 143, 0.7);
   border-radius: 50%;
 }
+.recipe-ice {
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
 .calories-ice {
   border: 2px solid #9cbe8f;
   @include size(53px, 72px);

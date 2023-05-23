@@ -1,8 +1,14 @@
 'use strict';
-const btn = document.querySelector('.modal-menu');
-const menu = document.querySelector('.mobile-menu');
+import { carusel } from './carusel/carusel';
+
+const [btn, menu, body, buttons] = [
+  '.modal-menu',
+  '.mobile-menu',
+  'body',
+  '.slid',
+].map(item => document.querySelector(item));
 const list = menu.querySelector('ul');
-const body = document.querySelector('body');
+buttons.addEventListener('click', carusel.scrollSlide);
 
 function addClassBtn() {
   btn.classList.toggle('is-open');

@@ -36,6 +36,9 @@
   width: 80%;
   background: $secondBackColor;
   border-radius: 20px;
+  @media screen and (min-width: 768px) {
+    width: 800px;
+  }
 }
 h5 {
   font-family: $seymour;
@@ -51,8 +54,7 @@ h5 {
   }
 }
 iframe {
-  width: 100%;
-  height: auto;
+  width: auto;
   margin: 20px auto;
   @media screen and (min-width: 768px) {
     margin: 32px auto;
