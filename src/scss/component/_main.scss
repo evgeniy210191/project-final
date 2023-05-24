@@ -156,6 +156,9 @@
     img {
       margin: 0 auto;
       width: 278px;
+      border-radius: 50%;
+      border-top: 4px solid #f8d24e;
+      box-shadow: 0 -4px 3px 0px #f8d24e;
       @media screen and (min-width: 768px) {
         width: 330px;
       }
@@ -305,6 +308,7 @@
     position: relative;
     display: flex;
     width: 900px;
+    right: 0;
     transition: right 0.5s linear;
     @media screen and (min-width: 480px) {
       width: 1380px;
