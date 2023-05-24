@@ -12,7 +12,18 @@ export const carusel = {
       position = Math.abs(clickedButton.indexOf(evt.target) * carusel.step);
       canvas.querySelector('.active').classList.remove('active');
       evt.target.className = 'active';
+      // moving = setTimeout(movingElement, 20);
       conteinerElements.style.right = `${position}px`;
     }
   },
 };
+function movingElement() {}
+
+return new Promise(res => {
+  if (carusel.position === position) {
+    clearInterval(moving);
+  } else {
+    res(carusel.position++);
+    conteinerElements.style.right = `${carusel.position}px`;
+  }
+});
