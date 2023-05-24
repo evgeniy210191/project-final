@@ -1303,8 +1303,13 @@ h5 {
 }
 
 iframe {
-  width: auto;
   margin: 20px auto;
+  height: 15em;
+}
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   iframe {
