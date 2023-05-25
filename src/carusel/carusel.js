@@ -4,7 +4,7 @@ const conteinerElements = document.querySelector('.reviews-container');
 
 export const carusel = {
   position: 0,
-  step: canvas.getBoundingClientRect().width + 30,
+  step: canvas.getBoundingClientRect().width + 100,
   scrollSlide(evt) {
     evt.preventDefault();
     if (evt.target.dataset.atribut === 'step') {
@@ -14,7 +14,7 @@ export const carusel = {
       );
       canvas.querySelector('.active').classList.remove('active');
       evt.target.className = 'active';
-      conteinerElements.style.right = `${position}px`;
+      conteinerElements.style.left = `-${position}px`;
     }
   },
 };
