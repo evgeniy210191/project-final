@@ -307,17 +307,17 @@
   .reviews-container {
     position: relative;
     display: flex;
-    width: 900px;
-    right: 0;
+    max-width: 900px;
+    left: 0;
     transition: all 0.5s cubic-bezier(0.33, 0.86, 0.9, 0.67);
     @media screen and (min-width: 480px) {
-      width: 1380px;
+      max-width: 1380px;
     }
     @media screen and (min-width: 768px) {
-      width: 2172px;
+      max-width: 2172px;
     }
     @media screen and (min-width: 1200px) {
-      width: 3102px;
+      max-width: 3102px;
     }
   }
   .review-slide {
@@ -387,11 +387,12 @@
 .slid {
   display: flex;
   justify-content: center;
-  a {
+  .slid-link {
     @include size(12px, 12px);
     background: #d9d9d9;
     border-radius: 50px;
     display: block;
+    cursor: pointer;
     &.active {
       background: #84a178;
     }
