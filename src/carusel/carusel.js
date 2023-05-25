@@ -9,7 +9,9 @@ export const carusel = {
     evt.preventDefault();
     if (evt.target.dataset.atribut === 'step') {
       const clickedButton = Object.values(buttons);
-      position = Math.abs(clickedButton.indexOf(evt.target) * carusel.step);
+      const position = Math.abs(
+        clickedButton.indexOf(evt.target) * carusel.step
+      );
       canvas.querySelector('.active').classList.remove('active');
       evt.target.className = 'active';
       conteinerElements.style.right = `${position}px`;
