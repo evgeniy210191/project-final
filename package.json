@@ -1,16 +1,16 @@
 {
-  "name": "project-final",
+  "name": "ice-cream",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://evgeniy210191.github.io/project-final/",
+  "homepage": "https://evgeniy210191.github.io/ice-cream/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-final/",
+    "build": "parcel build src/*.html --public-url /ice-cream/",
     "watch": "sass --watch ./src/scss/style.scss ./src/css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evgeniy210191/project-final.git"
+    "url": "git+https://github.com/evgeniy210191/ice-cream"
   },
   "keywords": [],
   "author": "Sulim Yevgenii <bees127@ukr.net>",
