@@ -356,27 +356,36 @@ h1 .lower {
   font-size: 32px;
 }
 
-.buttons {
+.buttons-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 12px;
-  text-align: left;
   padding-bottom: 236px;
 }
 @media screen and (min-width: 480px) {
-  .buttons {
+  .buttons-header {
     padding-bottom: 150px;
   }
 }
 @media screen and (min-width: 768px) {
-  .buttons {
+  .buttons-header {
     padding-bottom: 23px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .buttons {
+  .buttons-header {
     padding-bottom: 42px;
   }
 }
-.buttons .product {
+.buttons-header .product {
   font-weight: 600;
   padding: 11px 26px;
   border: 2px solid #f8d24e;
@@ -385,19 +394,19 @@ h1 .lower {
   background: transparent;
   color: #131313;
 }
-.buttons .product:hover, .buttons .product:focus {
+.buttons-header .product:hover, .buttons-header .product:focus {
   border: solid 2px #0a8817;
   color: #ffffff;
   outline: none;
 }
-.buttons .how-made {
+.buttons-header .how-made {
   font-weight: 600;
   background: transparent;
   text-decoration: underline;
   color: #f8d24e;
   border: none;
 }
-.buttons .how-made:hover, .buttons .how-made:focus {
+.buttons-header .how-made:hover, .buttons-header .how-made:focus {
   color: #131313;
   outline: none;
 }
@@ -1373,8 +1382,8 @@ h1 .lower {
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
   overflow-y: auto;
   pointer-events: none;
 }

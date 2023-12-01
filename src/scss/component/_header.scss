@@ -198,9 +198,13 @@ h1 {
     font-size: 32px;
   }
 }
-.buttons {
+
+.buttons-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 12px;
-  text-align: left;
   padding-bottom: 236px;
   @media screen and (min-width: 480px) {
     padding-bottom: 150px;
